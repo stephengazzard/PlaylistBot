@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GrantAccessViewController: UIViewController {
+
+    @IBOutlet var messageLabel: UILabel!
+    @IBOutlet var grantAccessButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()

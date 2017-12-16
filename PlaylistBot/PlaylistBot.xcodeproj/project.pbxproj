@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		3664FA7833C366F552B77B8A /* Pods_PlaylistBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C49B37F82B6926A92BFFAE /* Pods_PlaylistBot.framework */; };
 		BC83FF081FE5CEE40088348A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83FF071FE5CEE40088348A /* AppDelegate.swift */; };
-		BC83FF0A1FE5CEE40088348A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83FF091FE5CEE40088348A /* ViewController.swift */; };
-		BC83FF0D1FE5CEE40088348A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC83FF0B1FE5CEE40088348A /* Main.storyboard */; };
+		BC83FF0A1FE5CEE40088348A /* GrantAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83FF091FE5CEE40088348A /* GrantAccessViewController.swift */; };
+		BC83FF0D1FE5CEE40088348A /* GrantAccess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC83FF0B1FE5CEE40088348A /* GrantAccess.storyboard */; };
 		BC83FF0F1FE5CEE40088348A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC83FF0E1FE5CEE40088348A /* Assets.xcassets */; };
 		BC83FF121FE5CEE40088348A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC83FF101FE5CEE40088348A /* LaunchScreen.storyboard */; };
 		BC83FF1D1FE5CEE40088348A /* PlaylistBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83FF1C1FE5CEE40088348A /* PlaylistBotTests.swift */; };
@@ -91,8 +91,8 @@
 		AC864E1BFB891ABF6DC0F348 /* Pods-PlaylistBuilderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC83FF041FE5CEE40088348A /* PlaylistBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC83FF071FE5CEE40088348A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC83FF091FE5CEE40088348A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC83FF0C1FE5CEE40088348A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC83FF091FE5CEE40088348A /* GrantAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrantAccessViewController.swift; sourceTree = "<group>"; };
+		BC83FF0C1FE5CEE40088348A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GrantAccess.storyboard; sourceTree = "<group>"; };
 		BC83FF0E1FE5CEE40088348A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC83FF111FE5CEE40088348A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC83FF131FE5CEE40088348A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -219,9 +219,8 @@
 		BC83FF061FE5CEE40088348A /* PlaylistBot */ = {
 			isa = PBXGroup;
 			children = (
+				BC83FF581FE5D7680088348A /* Screens */,
 				BC83FF071FE5CEE40088348A /* AppDelegate.swift */,
-				BC83FF091FE5CEE40088348A /* ViewController.swift */,
-				BC83FF0B1FE5CEE40088348A /* Main.storyboard */,
 				BC83FF0E1FE5CEE40088348A /* Assets.xcassets */,
 				BC83FF101FE5CEE40088348A /* LaunchScreen.storyboard */,
 				BC83FF131FE5CEE40088348A /* Info.plist */,
@@ -263,6 +262,23 @@
 				BC83FF4B1FE5D1740088348A /* Info.plist */,
 			);
 			path = PlaylistBuilderTests;
+			sourceTree = "<group>";
+		};
+		BC83FF581FE5D7680088348A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BC83FF591FE5D7700088348A /* GrantAccess */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BC83FF591FE5D7700088348A /* GrantAccess */ = {
+			isa = PBXGroup;
+			children = (
+				BC83FF0B1FE5CEE40088348A /* GrantAccess.storyboard */,
+				BC83FF091FE5CEE40088348A /* GrantAccessViewController.swift */,
+			);
+			path = GrantAccess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,7 +465,7 @@
 			files = (
 				BC83FF121FE5CEE40088348A /* LaunchScreen.storyboard in Resources */,
 				BC83FF0F1FE5CEE40088348A /* Assets.xcassets in Resources */,
-				BC83FF0D1FE5CEE40088348A /* Main.storyboard in Resources */,
+				BC83FF0D1FE5CEE40088348A /* GrantAccess.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC83FF0A1FE5CEE40088348A /* ViewController.swift in Sources */,
+				BC83FF0A1FE5CEE40088348A /* GrantAccessViewController.swift in Sources */,
 				BC83FF081FE5CEE40088348A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -815,12 +831,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC83FF0B1FE5CEE40088348A /* Main.storyboard */ = {
+		BC83FF0B1FE5CEE40088348A /* GrantAccess.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BC83FF0C1FE5CEE40088348A /* Base */,
 			);
-			name = Main.storyboard;
+			name = GrantAccess.storyboard;
 			sourceTree = "<group>";
 		};
 		BC83FF101FE5CEE40088348A /* LaunchScreen.storyboard */ = {
