@@ -1,0 +1,50 @@
+PODS:
+  - FLEX (2.4.0)
+  - Hero (1.0.1)
+  - JRSwizzle (1.0)
+  - LifetimeTracker (1.2.1)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - Sourcery (0.9.0)
+  - SwiftLint (0.24.0)
+
+DEPENDENCIES:
+  - FLEX (~> 2.0)
+  - Hero (~> 1.0)
+  - JRSwizzle
+  - LifetimeTracker (from `git@github.com:krzysztofzablocki/LifetimeTracker.git`, branch `master`)
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - Sourcery (~> 0.7)
+  - SwiftLint (~> 0.20)
+
+EXTERNAL SOURCES:
+  LifetimeTracker:
+    :branch: master
+    :git: git@github.com:krzysztofzablocki/LifetimeTracker.git
+
+CHECKOUT OPTIONS:
+  LifetimeTracker:
+    :commit: ba8b4cf89cecd082a91b0a87440f23f8163c2c2a
+    :git: git@github.com:krzysztofzablocki/LifetimeTracker.git
+
+SPEC CHECKSUMS:
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  Hero: cee286821578e170d8c0c9c9cda7897357401112
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  LifetimeTracker: 0f0ce27287c41a4ae01dcbae1ae710c77b1aedea
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  Sourcery: e3829460a1fa0bcd3b689e6087a89cc063cd2289
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+
+PODFILE CHECKSUM: 3a009f27fa88feacc03028647ac13c0d2ac6f1bf
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,6 @@
+framework module Pods_PlaylistBot {
+  umbrella header "Pods-PlaylistBot-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_PlaylistBotUITests {
+  umbrella header "Pods-PlaylistBotUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
