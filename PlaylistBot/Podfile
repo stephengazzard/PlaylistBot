@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PlaylistBot' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PlaylistBot
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
+  pod 'Hero', '~> 1.0'
+  
+  # Tools
+  pod 'SwiftLint', '~> 0.20'
+  pod 'Sourcery', '~> 0.7'
+  
+  #Debugging Tools
+  pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+  pod 'LifetimeTracker', :git => 'git@github.com:krzysztofzablocki/LifetimeTracker.git', :branch => 'master', :configurations => ['Debug']
+  pod 'JRSwizzle', :configurations => ['Debug']
+
+  target 'PlaylistBotTests' do
+    inherit! :search_paths
+	pod 'Quick', '~> 1.2'
+	pod 'Nimble', '~> 7.0'
+  end
+
+  target 'PlaylistBotUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
