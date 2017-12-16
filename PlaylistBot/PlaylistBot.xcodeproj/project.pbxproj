@@ -22,6 +22,8 @@
 		BC83FF501FE5D1740088348A /* PlaylistBuilder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC83FF3A1FE5D1730088348A /* PlaylistBuilder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C553AB2867D64B6872DA13D4 /* Pods_PlaylistBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5ADA305F6AA7245B4EC4EC2 /* Pods_PlaylistBotTests.framework */; };
 		D2BCF7A9BB9779CF3142E299 /* Pods_PlaylistBotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A339FFAE8D200EA5188B5 /* Pods_PlaylistBotUITests.framework */; };
+		D378F414EBF0B7831B85B109 /* Pods_PlaylistBuilderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132EB657EF58FB0FE91EBF8B /* Pods_PlaylistBuilderTests.framework */; };
+		DD6B7864BC00A771B51ACD59 /* Pods_PlaylistBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6C59ED0839D9063E8AD988 /* Pods_PlaylistBuilder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +79,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		132EB657EF58FB0FE91EBF8B /* Pods_PlaylistBuilderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBuilderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6C59ED0839D9063E8AD988 /* Pods_PlaylistBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2609F9B0E8D959C6DA6238BB /* Pods-PlaylistBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBot/Pods-PlaylistBot.debug.xcconfig"; sourceTree = "<group>"; };
 		406308705870F468E0D0E4A8 /* Pods-PlaylistBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBotUITests/Pods-PlaylistBotUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4665B29B31689FF0F6254544 /* Pods-PlaylistBuilder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilder.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilder/Pods-PlaylistBuilder.release.xcconfig"; sourceTree = "<group>"; };
 		51AFEC1C5957230260C6D3AE /* Pods-PlaylistBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBot/Pods-PlaylistBot.release.xcconfig"; sourceTree = "<group>"; };
 		6FB3769508127F3E86B00C2D /* Pods-PlaylistBotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBotUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBotUITests/Pods-PlaylistBotUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87C49B37F82B6926A92BFFAE /* Pods_PlaylistBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CD7F7680D49EA72E39F71C /* Pods-PlaylistBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBotTests/Pods-PlaylistBotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC864E1BFB891ABF6DC0F348 /* Pods-PlaylistBuilderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC83FF041FE5CEE40088348A /* PlaylistBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC83FF071FE5CEE40088348A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC83FF091FE5CEE40088348A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,9 +108,11 @@
 		BC83FF421FE5D1740088348A /* PlaylistBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylistBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC83FF491FE5D1740088348A /* PlaylistBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistBuilderTests.swift; sourceTree = "<group>"; };
 		BC83FF4B1FE5D1740088348A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18C86B5B62474FDB7958070 /* Pods-PlaylistBuilderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9A172A2DA38F73C7844E5F5 /* Pods-PlaylistBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBotTests/Pods-PlaylistBotTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5ADA305F6AA7245B4EC4EC2 /* Pods_PlaylistBotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07A339FFAE8D200EA5188B5 /* Pods_PlaylistBotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3588CD7DEAAB8CB0EF4C871 /* Pods-PlaylistBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilder/Pods-PlaylistBuilder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6B7864BC00A771B51ACD59 /* Pods_PlaylistBuilder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC83FF431FE5D1740088348A /* PlaylistBuilder.framework in Frameworks */,
+				D378F414EBF0B7831B85B109 /* Pods_PlaylistBuilderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +170,10 @@
 				D9A172A2DA38F73C7844E5F5 /* Pods-PlaylistBotTests.release.xcconfig */,
 				6FB3769508127F3E86B00C2D /* Pods-PlaylistBotUITests.debug.xcconfig */,
 				406308705870F468E0D0E4A8 /* Pods-PlaylistBotUITests.release.xcconfig */,
+				F3588CD7DEAAB8CB0EF4C871 /* Pods-PlaylistBuilder.debug.xcconfig */,
+				4665B29B31689FF0F6254544 /* Pods-PlaylistBuilder.release.xcconfig */,
+				D18C86B5B62474FDB7958070 /* Pods-PlaylistBuilderTests.debug.xcconfig */,
+				AC864E1BFB891ABF6DC0F348 /* Pods-PlaylistBuilderTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -170,6 +184,8 @@
 				87C49B37F82B6926A92BFFAE /* Pods_PlaylistBot.framework */,
 				E5ADA305F6AA7245B4EC4EC2 /* Pods_PlaylistBotTests.framework */,
 				F07A339FFAE8D200EA5188B5 /* Pods_PlaylistBotUITests.framework */,
+				1A6C59ED0839D9063E8AD988 /* Pods_PlaylistBuilder.framework */,
+				132EB657EF58FB0FE91EBF8B /* Pods_PlaylistBuilderTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -331,10 +347,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC83FF551FE5D1740088348A /* Build configuration list for PBXNativeTarget "PlaylistBuilder" */;
 			buildPhases = (
+				12EFE224464C895C2E44DF60 /* [CP] Check Pods Manifest.lock */,
 				BC83FF351FE5D1730088348A /* Sources */,
 				BC83FF361FE5D1730088348A /* Frameworks */,
 				BC83FF371FE5D1730088348A /* Headers */,
 				BC83FF381FE5D1730088348A /* Resources */,
+				59E6B83C66992825495846B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,9 +367,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC83FF571FE5D1740088348A /* Build configuration list for PBXNativeTarget "PlaylistBuilderTests" */;
 			buildPhases = (
+				0CEF717E04F349100C5BFC0B /* [CP] Check Pods Manifest.lock */,
 				BC83FF3E1FE5D1740088348A /* Sources */,
 				BC83FF3F1FE5D1740088348A /* Frameworks */,
 				BC83FF401FE5D1740088348A /* Resources */,
+				0B75E3346535FA45376F63E5 /* [CP] Embed Pods Frameworks */,
+				3CB4AA6C6BD95670BA7F9874 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -469,13 +490,78 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBotUITests/Pods-PlaylistBotUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBotUITests/Pods-PlaylistBotUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B75E3346535FA45376F63E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0CEF717E04F349100C5BFC0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaylistBuilderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12EFE224464C895C2E44DF60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaylistBuilder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		148D8F048BCAC5F07DF90D05 /* [CP] Check Pods Manifest.lock */ = {
@@ -514,6 +600,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3CB4AA6C6BD95670BA7F9874 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3DB24773BFDD6FD3E19D05C2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +628,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBotTests/Pods-PlaylistBotTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E6B83C66992825495846B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBuilder/Pods-PlaylistBuilder-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6DC6A7C05CABF7BDF1716C70 /* [CP] Check Pods Manifest.lock */ = {
@@ -554,21 +670,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBot/Pods-PlaylistBot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/JRSwizzle/JRSwizzle.framework",
 				"${BUILT_PRODUCTS_DIR}/LifetimeTracker/LifetimeTracker.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JRSwizzle.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LifetimeTracker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -929,6 +1045,7 @@
 		};
 		BC83FF511FE5D1740088348A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3588CD7DEAAB8CB0EF4C871 /* Pods-PlaylistBuilder.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -953,6 +1070,7 @@
 		};
 		BC83FF521FE5D1740088348A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4665B29B31689FF0F6254544 /* Pods-PlaylistBuilder.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -977,6 +1095,7 @@
 		};
 		BC83FF531FE5D1740088348A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18C86B5B62474FDB7958070 /* Pods-PlaylistBuilderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -993,6 +1112,7 @@
 		};
 		BC83FF541FE5D1740088348A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC864E1BFB891ABF6DC0F348 /* Pods-PlaylistBuilderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
