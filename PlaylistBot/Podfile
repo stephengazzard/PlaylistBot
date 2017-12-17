@@ -25,6 +25,7 @@ end
 def test_dependencies
     pod 'Quick', '~> 1.2'
     pod 'Nimble', '~> 7.0'
+    pod 'RxTest', '~> 4.0'
 end
 
 target 'PlaylistBuilder' do
