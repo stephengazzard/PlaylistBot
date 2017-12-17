@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var rootFlowController: RootFlowController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIWindow()
+        window.makeKeyAndVisible()
+        self.window = window
+
+        let rootFlowController = RootFlowController(window: window)
+        rootFlowController.presentInitialView()
+        self.rootFlowController = rootFlowController
+
         return true
     }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3664FA7833C366F552B77B8A /* Pods_PlaylistBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C49B37F82B6926A92BFFAE /* Pods_PlaylistBot.framework */; };
+		BC5404EA1FE6CCFB00D8768E /* RootFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5404E91FE6CCFB00D8768E /* RootFlowController.swift */; };
 		BC83FF081FE5CEE40088348A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83FF071FE5CEE40088348A /* AppDelegate.swift */; };
 		BC83FF0A1FE5CEE40088348A /* GrantAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC83FF091FE5CEE40088348A /* GrantAccessViewController.swift */; };
 		BC83FF0D1FE5CEE40088348A /* GrantAccess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC83FF0B1FE5CEE40088348A /* GrantAccess.storyboard */; };
@@ -89,6 +90,7 @@
 		87C49B37F82B6926A92BFFAE /* Pods_PlaylistBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CD7F7680D49EA72E39F71C /* Pods-PlaylistBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBotTests/Pods-PlaylistBotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC864E1BFB891ABF6DC0F348 /* Pods-PlaylistBuilderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC5404E91FE6CCFB00D8768E /* RootFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowController.swift; sourceTree = "<group>"; };
 		BC83FF041FE5CEE40088348A /* PlaylistBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC83FF071FE5CEE40088348A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC83FF091FE5CEE40088348A /* GrantAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrantAccessViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				BC83FF591FE5D7700088348A /* GrantAccess */,
+				BC5404E91FE6CCFB00D8768E /* RootFlowController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -766,6 +769,7 @@
 			files = (
 				BC83FF0A1FE5CEE40088348A /* GrantAccessViewController.swift in Sources */,
 				BC83FF081FE5CEE40088348A /* AppDelegate.swift in Sources */,
+				BC5404EA1FE6CCFB00D8768E /* RootFlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
