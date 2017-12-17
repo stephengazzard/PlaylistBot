@@ -1,0 +1,11 @@
+sources:
+  - PlaylistBot
+templates:
+  - SourceryTemplates/
+output:
+  PlaylistBot/Generated/Sourcery
+
+args:
+  app: PlaylistBot
+  imports: 
+    - RxSwift

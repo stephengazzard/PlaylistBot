@@ -1,0 +1,22 @@
+excluded:
+  - Pods
+  - PlaylistBot/Generated
+disabled_rules:
+
+colon:
+  flexible_right_spacing: true
+variable_name:
+  max_length: 40
+  excluded:
+    - id
+statement_position:
+  statement_mode: uncuddled_else
+custom_rules:
+  pending_spec:
+    name: "Pending Spec"
+    included: ".*(Spec|Test)(s)?.swift" # only include test files
+    regex: "([^a-zA-Z0-9]pending[^a-zA-Z0-9])"
+    match_kinds:
+      - identifier
+    message: "Pending specs should be enabled as soon as possible."
+    severity: warning

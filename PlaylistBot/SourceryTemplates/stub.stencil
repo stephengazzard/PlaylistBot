@@ -1,0 +1,61 @@
+{% for argument in argument.imports %}
+import {{ argument }}
+{% endfor %}
+{% if argument.app %}@testable import {{ argument.app }}{% endif %}
+
+{% macro stubValue variable %}{#
+#}{% if variable.annotations.StubValue %}{{ variable.annotations.StubValue }}{% else %}{#
+#}{% if variable.unwrappedTypeName|contains:"JSONArray" %}[]{% else %}{#
+#}{% if variable.type.annotations.AutoStubbable %}{{ variable.unwrappedTypeName }}.stub(){% else %}{#
+#}{% if variable.isArray %}[]{% else %}{#
+#}{% if variable.type.kind == "enum" %}.{{ variable.type.cases.first.name}}{% else %}{#
+#}{% if variable.unwrappedTypeName == "Int" or variable.unwrappedTypeName == "Any" %}14{% else %}{#
+#}{% if variable.unwrappedTypeName == "String" %}"Bob"{% else %}{#
+#}{% if variable.unwrappedTypeName == "Double" %}3.14{% else %}{#
+#}{% if variable.unwrappedTypeName == "Bool" %}false{% else %}{#
+#}{% if variable.unwrappedTypeName == "Date" %}Date(timeIntervalSince1970: 100){% else %}{#
+#}{% if variable.unwrappedTypeName == "URL" %}URL(string: "www.google.ca")!{% else %}{#
+#}{% if variable.unwrappedTypeName == "UIImage" %}UIImage(){% else %}{#
+#}{{ variable.unwrappedTypeName }}(){#
+#}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{% endif %}{#
+#}{% endmacro %}
+
+{% macro stub type %}
+extension {{ type.name }} {
+
+    static func stub(
+    {% for variable in type.storedVariables %}
+        {{ variable.name }}: {{ variable.typeName }} = {% call stubValue variable %}{% if not forloop.last %},{% endif %}
+    {% endfor %}
+    ) -> {{ type.name }} {
+        {% if type.kind == "class" and not type.annotations.DefaultInit %}
+        let stub = {{ type.name }}()
+        {% for variable in type.storedVariables %}
+            stub.{{ variable.name }} = {{ variable.name }}
+        {% endfor %}
+        return stub
+        {% else %}
+        return {{ type.name }}(
+        {% for variable in type.storedVariables %}
+            {{ variable.name }}: {{ variable.name }}{% if not forloop.last %},{% endif %}
+        {% endfor %}
+        )
+        {% endif %}
+    }
+    {% if type.implements.JSONEncodable %}
+
+    static func jsonStub() -> JSONDictionary {
+        return {{ type.name }}.stub().toJSON()
+    }{% endif%}
+
+}
+{% endmacro %}
+
+{% for type in types.classes|annotated:"AutoStubbable" %}
+{% call stub type %}
+{% endfor %}
+
+{% for type in types.structs|annotated:"AutoStubbable" %}
+{% call stub type %}
+{% endfor %}
+	
