@@ -21,6 +21,7 @@
 		BC83FF4C1FE5D1740088348A /* PlaylistBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = BC83FF3C1FE5D1740088348A /* PlaylistBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC83FF4F1FE5D1740088348A /* PlaylistBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC83FF3A1FE5D1730088348A /* PlaylistBuilder.framework */; };
 		BC83FF501FE5D1740088348A /* PlaylistBuilder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC83FF3A1FE5D1730088348A /* PlaylistBuilder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCAFF87B1FE6D4A400A2A17E /* storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFF87A1FE6D4A400A2A17E /* storyboards.swift */; };
 		C553AB2867D64B6872DA13D4 /* Pods_PlaylistBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5ADA305F6AA7245B4EC4EC2 /* Pods_PlaylistBotTests.framework */; };
 		D2BCF7A9BB9779CF3142E299 /* Pods_PlaylistBotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A339FFAE8D200EA5188B5 /* Pods_PlaylistBotUITests.framework */; };
 		D378F414EBF0B7831B85B109 /* Pods_PlaylistBuilderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132EB657EF58FB0FE91EBF8B /* Pods_PlaylistBuilderTests.framework */; };
@@ -91,6 +92,7 @@
 		A6CD7F7680D49EA72E39F71C /* Pods-PlaylistBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBotTests/Pods-PlaylistBotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC864E1BFB891ABF6DC0F348 /* Pods-PlaylistBuilderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC5404E91FE6CCFB00D8768E /* RootFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowController.swift; sourceTree = "<group>"; };
+		BC5404F11FE6D1D700D8768E /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
 		BC83FF041FE5CEE40088348A /* PlaylistBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC83FF071FE5CEE40088348A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC83FF091FE5CEE40088348A /* GrantAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrantAccessViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		BC83FF421FE5D1740088348A /* PlaylistBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylistBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC83FF491FE5D1740088348A /* PlaylistBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistBuilderTests.swift; sourceTree = "<group>"; };
 		BC83FF4B1FE5D1740088348A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAFF87A1FE6D4A400A2A17E /* storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyboards.swift; sourceTree = "<group>"; };
 		D18C86B5B62474FDB7958070 /* Pods-PlaylistBuilderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuilderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuilderTests/Pods-PlaylistBuilderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9A172A2DA38F73C7844E5F5 /* Pods-PlaylistBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBotTests/Pods-PlaylistBotTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5ADA305F6AA7245B4EC4EC2 /* Pods_PlaylistBotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,9 +195,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC5404EF1FE6D1B700D8768E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				BC5404F01FE6D1BC00D8768E /* SwiftGen */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		BC5404F01FE6D1BC00D8768E /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				BCAFF87A1FE6D4A400A2A17E /* storyboards.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		BC83FEFB1FE5CEE40088348A = {
 			isa = PBXGroup;
 			children = (
+				BC5404F11FE6D1D700D8768E /* swiftgen.yml */,
 				BC83FF061FE5CEE40088348A /* PlaylistBot */,
 				BC83FF1B1FE5CEE40088348A /* PlaylistBotTests */,
 				BC83FF261FE5CEE40088348A /* PlaylistBotUITests */,
@@ -221,6 +241,7 @@
 		BC83FF061FE5CEE40088348A /* PlaylistBot */ = {
 			isa = PBXGroup;
 			children = (
+				BC5404EF1FE6D1B700D8768E /* Generated */,
 				BC83FF581FE5D7680088348A /* Screens */,
 				BC83FF071FE5CEE40088348A /* AppDelegate.swift */,
 				BC83FF0E1FE5CEE40088348A /* Assets.xcassets */,
@@ -303,6 +324,7 @@
 			buildConfigurationList = BC83FF2C1FE5CEE40088348A /* Build configuration list for PBXNativeTarget "PlaylistBot" */;
 			buildPhases = (
 				148D8F048BCAC5F07DF90D05 /* [CP] Check Pods Manifest.lock */,
+				BC5404EE1FE6D0F900D8768E /* Run SwiftGen */,
 				BC83FF001FE5CEE40088348A /* Sources */,
 				BC83FF011FE5CEE40088348A /* Frameworks */,
 				BC83FF021FE5CEE40088348A /* Resources */,
@@ -725,6 +747,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBot/Pods-PlaylistBot-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC5404EE1FE6D0F900D8768E /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen config run";
+		};
 		BFA7713135A878669E6D31EB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -768,6 +804,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC83FF0A1FE5CEE40088348A /* GrantAccessViewController.swift in Sources */,
+				BCAFF87B1FE6D4A400A2A17E /* storyboards.swift in Sources */,
 				BC83FF081FE5CEE40088348A /* AppDelegate.swift in Sources */,
 				BC5404EA1FE6CCFB00D8768E /* RootFlowController.swift in Sources */,
 			);

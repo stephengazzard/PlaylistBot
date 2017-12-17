@@ -1,0 +1,7 @@
+input_dir: PlaylistBot
+output_dir: PlaylistBot/Generated/swiftgen
+
+storyboards:
+  paths: Screens
+  output: storyboards.swift
+  templateName: swift4
