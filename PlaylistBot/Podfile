@@ -7,6 +7,7 @@ def common_pod_dependencies
     #Tools
     pod 'SwiftLint', '~> 0.20'
     pod 'Sourcery', '~> 0.7'
+    pod 'SwiftGen'
 end
 
 def app_dependencies
