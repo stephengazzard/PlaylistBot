@@ -56,7 +56,7 @@ enum StoryboardScene {
   enum GrantAccess: StoryboardType {
     static let storyboardName = "GrantAccess"
 
-    static let initialScene = InitialSceneType<PlaylistBot.GrantAccessViewController>(storyboard: GrantAccess.self)
+    static let grantAccess = SceneType<PlaylistBot.GrantAccessViewController>(storyboard: GrantAccess.self, identifier: "GrantAccess")
   }
 }
 

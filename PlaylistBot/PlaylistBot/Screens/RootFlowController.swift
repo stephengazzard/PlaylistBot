@@ -17,8 +17,7 @@ class RootFlowController {
     }
 
     func presentInitialView() {
-        let grantAccessStoryboard = UIStoryboard(name: "GrantAccess", bundle: nil)
-        let grantAccessViewController = grantAccessStoryboard.instantiateInitialViewController()!
+        let grantAccessViewController = StoryboardScene.GrantAccess.grantAccess.instantiate()
         let navigationController = UINavigationController(rootViewController: grantAccessViewController)
         window.rootViewController = navigationController
     }
